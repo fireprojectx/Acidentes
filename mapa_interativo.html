@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_546d368426f933169e7004e39986d19a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_546d368426f933169e7004e39986d19a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_546d368426f933169e7004e39986d19a = L.map(
+                "map_546d368426f933169e7004e39986d19a",
+                {
+                    center: [-19.923750000000002, -44.93738888888889],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_beee19f172a32a3f1da9697b46560844 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var marker_7dad81ab160ff2b0dd915250053a24fb = L.marker(
+                [-20.158, -44.899],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_195da5a4ae5703fb8709abb466c9ebdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7dad81ab160ff2b0dd915250053a24fb.setIcon(icon_195da5a4ae5703fb8709abb466c9ebdc);
+        
+    
+            marker_7dad81ab160ff2b0dd915250053a24fb.bindTooltip(
+                `<div>
+                     Divinópolis - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9110db79e790ef505de305f5fc0b58c = L.marker(
+                [-19.991, -44.999],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_d8d0ab0321f0e8c921d5b5cf493ba0fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a9110db79e790ef505de305f5fc0b58c.setIcon(icon_d8d0ab0321f0e8c921d5b5cf493ba0fc);
+        
+    
+            marker_a9110db79e790ef505de305f5fc0b58c.bindTooltip(
+                `<div>
+                     Perdigão - Tempo de resposta: < 1 hora
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aba58b892073954d3e7c042582dfa41c = L.marker(
+                [-19.895, -44.975],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_43cb2e7b7ec75a5bbbac342adc1944f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_aba58b892073954d3e7c042582dfa41c.setIcon(icon_43cb2e7b7ec75a5bbbac342adc1944f4);
+        
+    
+            marker_aba58b892073954d3e7c042582dfa41c.bindTooltip(
+                `<div>
+                     Nova Serrana - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe1320a2e7a840dc792ccf85962f92fe = L.marker(
+                [-20.099, -44.584],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_db990576d546de50b5f5d1af00b01e2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fe1320a2e7a840dc792ccf85962f92fe.setIcon(icon_db990576d546de50b5f5d1af00b01e2a);
+        
+    
+            marker_fe1320a2e7a840dc792ccf85962f92fe.bindTooltip(
+                `<div>
+                     Itaúna - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc19490d3560f0ee8f4c69dde592e041 = L.marker(
+                [-21.027, -45.014],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_540b09b690474d287d0a8a9e47eacb3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_dc19490d3560f0ee8f4c69dde592e041.setIcon(icon_540b09b690474d287d0a8a9e47eacb3f);
+        
+    
+            marker_dc19490d3560f0ee8f4c69dde592e041.bindTooltip(
+                `<div>
+                     Sto. Antônio do Amparo - Tempo de resposta: < 1 hora
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a95eb0bb4e1faff4b29edbb65ab6aa47 = L.marker(
+                [-20.485, -45.436],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_fdc16411492fc45ff8335581567c5511 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a95eb0bb4e1faff4b29edbb65ab6aa47.setIcon(icon_fdc16411492fc45ff8335581567c5511);
+        
+    
+            marker_a95eb0bb4e1faff4b29edbb65ab6aa47.bindTooltip(
+                `<div>
+                     Formiga - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4efa55af93efe82c5539a11f9f766459 = L.marker(
+                [-20.468, -45.965],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_92442f6b6152403d91093be744d5f5e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4efa55af93efe82c5539a11f9f766459.setIcon(icon_92442f6b6152403d91093be744d5f5e7);
+        
+    
+            marker_4efa55af93efe82c5539a11f9f766459.bindTooltip(
+                `<div>
+                     Piumhi - Tempo de resposta: > 1 hora
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e3a3563a7c439189b28c9787b54c8ef = L.marker(
+                [-20.046, -45.987],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_cb5ac3edc9e990b5d9abbf05cc324f04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1e3a3563a7c439189b28c9787b54c8ef.setIcon(icon_cb5ac3edc9e990b5d9abbf05cc324f04);
+        
+    
+            marker_1e3a3563a7c439189b28c9787b54c8ef.bindTooltip(
+                `<div>
+                     Bambuí - Tempo de resposta: > 1 hora
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc67e8674fc873e45f63e6d353439dd0 = L.marker(
+                [-20.011, -44.215],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_24e4c36ea5c6d8a7912f2d8df70b2dd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dc67e8674fc873e45f63e6d353439dd0.setIcon(icon_24e4c36ea5c6d8a7912f2d8df70b2dd9);
+        
+    
+            marker_dc67e8674fc873e45f63e6d353439dd0.bindTooltip(
+                `<div>
+                     Belo Horizonte - Tempo de resposta: -
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35e202149244801685906237ea30cb40 = L.marker(
+                [-19.842, -43.853],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_73c0dab460d5bbe4351c9c468a99e8a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_35e202149244801685906237ea30cb40.setIcon(icon_73c0dab460d5bbe4351c9c468a99e8a8);
+        
+    
+            marker_35e202149244801685906237ea30cb40.bindTooltip(
+                `<div>
+                     Contagem - Tempo de resposta: < 1 hora
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eeb242a2d6918f00c818ce0f25b18ec9 = L.marker(
+                [-20.046, -43.978],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_95b82ca413b83b6519e83195ed5680ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eeb242a2d6918f00c818ce0f25b18ec9.setIcon(icon_95b82ca413b83b6519e83195ed5680ac);
+        
+    
+            marker_eeb242a2d6918f00c818ce0f25b18ec9.bindTooltip(
+                `<div>
+                     Betim - Tempo de resposta: -
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68dcf6f237e6af8a84f30b6ca91fbb52 = L.marker(
+                [-19.713, -43.938],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_dcbab1a1a22c8dea262913de1014f246 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_68dcf6f237e6af8a84f30b6ca91fbb52.setIcon(icon_dcbab1a1a22c8dea262913de1014f246);
+        
+    
+            marker_68dcf6f237e6af8a84f30b6ca91fbb52.bindTooltip(
+                `<div>
+                     Sabará - Tempo de resposta: -
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba96981b58760ceb59d65f105510338e = L.marker(
+                [-19.783, -44.115],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_4a21aaf0fbf3f68ca0af3e7ef918aa2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ba96981b58760ceb59d65f105510338e.setIcon(icon_4a21aaf0fbf3f68ca0af3e7ef918aa2b);
+        
+    
+            marker_ba96981b58760ceb59d65f105510338e.bindTooltip(
+                `<div>
+                     Ribeirão das Neves - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cae2e78ce8e4ca22f7db2b0a0af72f5c = L.marker(
+                [-19.455, -44.236],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_4c4974e6f56377f7739ab6ac2307ffae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cae2e78ce8e4ca22f7db2b0a0af72f5c.setIcon(icon_4c4974e6f56377f7739ab6ac2307ffae);
+        
+    
+            marker_cae2e78ce8e4ca22f7db2b0a0af72f5c.bindTooltip(
+                `<div>
+                     Sete Lagoas - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d4a112483ed74c1dc0343d1ede5605e = L.marker(
+                [-19.635, -43.898],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_c904a1016ae8c9209f8bd68ef6e5c412 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5d4a112483ed74c1dc0343d1ede5605e.setIcon(icon_c904a1016ae8c9209f8bd68ef6e5c412);
+        
+    
+            marker_5d4a112483ed74c1dc0343d1ede5605e.bindTooltip(
+                `<div>
+                     Lagoa Santa - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a832ab6ab4f9d92673fed328100c1332 = L.marker(
+                [-19.637, -43.225],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_0a61b175cac5189f6b98bad48fb00757 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a832ab6ab4f9d92673fed328100c1332.setIcon(icon_0a61b175cac5189f6b98bad48fb00757);
+        
+    
+            marker_a832ab6ab4f9d92673fed328100c1332.bindTooltip(
+                `<div>
+                     Itabira - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fd0cc5ee4dc91cf94998fca92b65086 = L.marker(
+                [-19.818, -44.171],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_b5696e2e1da7312d05f0384f0f4be9d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4fd0cc5ee4dc91cf94998fca92b65086.setIcon(icon_b5696e2e1da7312d05f0384f0f4be9d9);
+        
+    
+            marker_4fd0cc5ee4dc91cf94998fca92b65086.bindTooltip(
+                `<div>
+                     João Monlevade - Tempo de resposta: < 1 hora
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53b936c9e92a76fae93ccc3e2820ae25 = L.marker(
+                [-20.017, -43.019],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_8847d4e9246ccb02aa4d777dd9a733f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_53b936c9e92a76fae93ccc3e2820ae25.setIcon(icon_8847d4e9246ccb02aa4d777dd9a733f1);
+        
+    
+            marker_53b936c9e92a76fae93ccc3e2820ae25.bindTooltip(
+                `<div>
+                     Rio Piracicaba e Alvinópolis - Tempo de resposta: > 1 hora
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_202b32190d4d049bc95d3078ec9008c8 = L.marker(
+                [-20.667, -43.787],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_cb4f06fe30163fc73157737317154111 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_202b32190d4d049bc95d3078ec9008c8.setIcon(icon_cb4f06fe30163fc73157737317154111);
+        
+    
+            marker_202b32190d4d049bc95d3078ec9008c8.bindTooltip(
+                `<div>
+                     Conselheiro Lafaiete - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e420494b4137af2660c8c3454cc1bf21 = L.marker(
+                [-19.865, -44.603],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_1fde3e427130dbe5fe358c118dfaae8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e420494b4137af2660c8c3454cc1bf21.setIcon(icon_1fde3e427130dbe5fe358c118dfaae8d);
+        
+    
+            marker_e420494b4137af2660c8c3454cc1bf21.bindTooltip(
+                `<div>
+                     Pará de Minas - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_685512deb4459d3c1632e69a4d0722fe = L.marker(
+                [-20.413, -42.896],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_c5109ece2639e4029632850c78c0539b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_685512deb4459d3c1632e69a4d0722fe.setIcon(icon_c5109ece2639e4029632850c78c0539b);
+        
+    
+            marker_685512deb4459d3c1632e69a4d0722fe.bindTooltip(
+                `<div>
+                     Ponte Nova - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7440df86777e15da0deb08fd5608a69 = L.marker(
+                [-20.261, -42.031],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_c381cb0792832d48859cc3ccd793ffdf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c7440df86777e15da0deb08fd5608a69.setIcon(icon_c381cb0792832d48859cc3ccd793ffdf);
+        
+    
+            marker_c7440df86777e15da0deb08fd5608a69.bindTooltip(
+                `<div>
+                     Manhuaçu - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3b0d8778449557405004c732648900d = L.marker(
+                [-20.763, -42.875],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_4589c9f02324cd08dbcf1da9b105f361 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b3b0d8778449557405004c732648900d.setIcon(icon_4589c9f02324cd08dbcf1da9b105f361);
+        
+    
+            marker_b3b0d8778449557405004c732648900d.bindTooltip(
+                `<div>
+                     Viçosa - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e65f66748c4196214adbffc7070cee5 = L.marker(
+                [-21.134, -42.994],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_5a90605484f1a3e0590ff0d0a4c18c74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5e65f66748c4196214adbffc7070cee5.setIcon(icon_5a90605484f1a3e0590ff0d0a4c18c74);
+        
+    
+            marker_5e65f66748c4196214adbffc7070cee5.bindTooltip(
+                `<div>
+                     Ubá - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f41068980894df6565b1a8d548a1ca25 = L.marker(
+                [-21.155, -42.377],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_b41c42850db5655df94a8a6f88892160 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f41068980894df6565b1a8d548a1ca25.setIcon(icon_b41c42850db5655df94a8a6f88892160);
+        
+    
+            marker_f41068980894df6565b1a8d548a1ca25.bindTooltip(
+                `<div>
+                     Muriaé - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0de9b18ce952505d150c6b4c2b45e065 = L.marker(
+                [-21.776, -43.356],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_abbcc8ec11767fe57cedd11ca653f9ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0de9b18ce952505d150c6b4c2b45e065.setIcon(icon_abbcc8ec11767fe57cedd11ca653f9ba);
+        
+    
+            marker_0de9b18ce952505d150c6b4c2b45e065.bindTooltip(
+                `<div>
+                     Juiz de Fora-1 - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4257f7403fa41cd89280b9194a90c7d3 = L.marker(
+                [-21.722, -43.429],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_5a7a04ef8cc289d1891742e0d7a413b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4257f7403fa41cd89280b9194a90c7d3.setIcon(icon_5a7a04ef8cc289d1891742e0d7a413b4);
+        
+    
+            marker_4257f7403fa41cd89280b9194a90c7d3.bindTooltip(
+                `<div>
+                     Juiz de Fora-2 - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55e41131ad26a054b5a1457914747d8e = L.marker(
+                [-22.023, -44.043],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_c41a24f7df4a6848665337dae09a2527 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_55e41131ad26a054b5a1457914747d8e.setIcon(icon_c41a24f7df4a6848665337dae09a2527);
+        
+    
+            marker_55e41131ad26a054b5a1457914747d8e.bindTooltip(
+                `<div>
+                     Chaidor - Tempo de resposta: > 1 hora
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f901da0090e4fb7d27661eaad11671a6 = L.marker(
+                [-18.947, -48.289],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_53b2a7d49bccf4d4653e94f410bdcd0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f901da0090e4fb7d27661eaad11671a6.setIcon(icon_53b2a7d49bccf4d4653e94f410bdcd0f);
+        
+    
+            marker_f901da0090e4fb7d27661eaad11671a6.bindTooltip(
+                `<div>
+                     Uberlândia-1 - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c65a4e633c9ca3423c892bf230c5b648 = L.marker(
+                [-19.054, -48.061],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_9196308e537ab4abc19fc3958be44426 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c65a4e633c9ca3423c892bf230c5b648.setIcon(icon_9196308e537ab4abc19fc3958be44426);
+        
+    
+            marker_c65a4e633c9ca3423c892bf230c5b648.bindTooltip(
+                `<div>
+                     Uberlândia-2 - Tempo de resposta: < 1 hora
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b8df1084866df934ae8e000dfe9f1b3 = L.marker(
+                [-18.669, -48.198],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_297f3fce592998d39c561411f3614dc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1b8df1084866df934ae8e000dfe9f1b3.setIcon(icon_297f3fce592998d39c561411f3614dc7);
+        
+    
+            marker_1b8df1084866df934ae8e000dfe9f1b3.bindTooltip(
+                `<div>
+                     Araguari - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6078b43154175ef0f74809af2f16721e = L.marker(
+                [-18.959, -46.996],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_e08ea66e06531edac901c846c89fc506 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6078b43154175ef0f74809af2f16721e.setIcon(icon_e08ea66e06531edac901c846c89fc506);
+        
+    
+            marker_6078b43154175ef0f74809af2f16721e.bindTooltip(
+                `<div>
+                     Patrocínio - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65b2d79b48780dacabcd5c8188b850ed = L.marker(
+                [-18.612, -46.717],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_e370338fb6dd70c97ef87eeacd59bba9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_65b2d79b48780dacabcd5c8188b850ed.setIcon(icon_e370338fb6dd70c97ef87eeacd59bba9);
+        
+    
+            marker_65b2d79b48780dacabcd5c8188b850ed.bindTooltip(
+                `<div>
+                     Patos de Minas - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bde7b283a071597c44b4ff156869b071 = L.marker(
+                [-19.937, -46.938],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_ce43bcfc1a2f6d16e3be35f899f383a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bde7b283a071597c44b4ff156869b071.setIcon(icon_ce43bcfc1a2f6d16e3be35f899f383a4);
+        
+    
+            marker_bde7b283a071597c44b4ff156869b071.bindTooltip(
+                `<div>
+                     Araxá - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f39868cc752146dc80c3633aeaad2987 = L.marker(
+                [-19.783, -47.943],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_906f5552fd15dd7bfc2763cacfd2f5bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f39868cc752146dc80c3633aeaad2987.setIcon(icon_906f5552fd15dd7bfc2763cacfd2f5bb);
+        
+    
+            marker_f39868cc752146dc80c3633aeaad2987.bindTooltip(
+                `<div>
+                     Uberaba-1 - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f390e1269eaaf17819edb861ac1c525 = L.marker(
+                [-19.982, -47.902],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_9ea46fd02b4c929efe1ffb5a5792246d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7f390e1269eaaf17819edb861ac1c525.setIcon(icon_9ea46fd02b4c929efe1ffb5a5792246d);
+        
+    
+            marker_7f390e1269eaaf17819edb861ac1c525.bindTooltip(
+                `<div>
+                     Uberaba-2 - Tempo de resposta: < 1 hora
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b80f6953352059621d62e8e930b7d6b = L.marker(
+                [-20.042, -48.949],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_449ed859df02e14f18bb9c6321e7efc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8b80f6953352059621d62e8e930b7d6b.setIcon(icon_449ed859df02e14f18bb9c6321e7efc9);
+        
+    
+            marker_8b80f6953352059621d62e8e930b7d6b.bindTooltip(
+                `<div>
+                     Frutal - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4710fe3ee2f7ff674bd8695811cb014 = L.marker(
+                [-19.747, -50.196],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_80ab138c24896713433add6f5e723b8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b4710fe3ee2f7ff674bd8695811cb014.setIcon(icon_80ab138c24896713433add6f5e723b8c);
+        
+    
+            marker_b4710fe3ee2f7ff674bd8695811cb014.bindTooltip(
+                `<div>
+                     Iturama - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66bbcd0fc09ee24abebf54c5350dceba = L.marker(
+                [-18.997, -49.462],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_5dc8366332c09a49871b88cad75fc602 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_66bbcd0fc09ee24abebf54c5350dceba.setIcon(icon_5dc8366332c09a49871b88cad75fc602);
+        
+    
+            marker_66bbcd0fc09ee24abebf54c5350dceba.bindTooltip(
+                `<div>
+                     Ituiutaba - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c4a355788309ace5f8177075825658b = L.marker(
+                [-19.059, -49.012],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_0634ffa558a532ad5577ee84e3dd3e85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7c4a355788309ace5f8177075825658b.setIcon(icon_0634ffa558a532ad5577ee84e3dd3e85);
+        
+    
+            marker_7c4a355788309ace5f8177075825658b.bindTooltip(
+                `<div>
+                     Prata - Tempo de resposta: > 1 hora
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65ccaee1208aa7a2d1468b440057dd84 = L.marker(
+                [-21.582, -45.435],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_c9e3944f788406150a8e8981d6bd637d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_65ccaee1208aa7a2d1468b440057dd84.setIcon(icon_c9e3944f788406150a8e8981d6bd637d);
+        
+    
+            marker_65ccaee1208aa7a2d1468b440057dd84.bindTooltip(
+                `<div>
+                     Varginha - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a4825349e8ca7c53aa18532940d108c = L.marker(
+                [-21.714, -45.255],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_646096672a79d6a113746e72a4efe454 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7a4825349e8ca7c53aa18532940d108c.setIcon(icon_646096672a79d6a113746e72a4efe454);
+        
+    
+            marker_7a4825349e8ca7c53aa18532940d108c.bindTooltip(
+                `<div>
+                     Três Corações - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f23026a18f42368e2dd36825c9822b28 = L.marker(
+                [-22.019, -44.996],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_2b03ca9f4dc089e8b5fe75581b817f7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f23026a18f42368e2dd36825c9822b28.setIcon(icon_2b03ca9f4dc089e8b5fe75581b817f7f);
+        
+    
+            marker_f23026a18f42368e2dd36825c9822b28.bindTooltip(
+                `<div>
+                     Soledade de Minas - Tempo de resposta: < 1 hora
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67dfad0cf02c79deb3da97bfc800bc81 = L.marker(
+                [-22.137, -45.054],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_1b7ea578ebb1b4e92039dabf902edc2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_67dfad0cf02c79deb3da97bfc800bc81.setIcon(icon_1b7ea578ebb1b4e92039dabf902edc2a);
+        
+    
+            marker_67dfad0cf02c79deb3da97bfc800bc81.bindTooltip(
+                `<div>
+                     São Lourenço - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_737f8d50a3f171a03ee8397aef2b6d95 = L.marker(
+                [-22.447, -45.464],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_74aa742a87852f96774db8a37aab5b89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_737f8d50a3f171a03ee8397aef2b6d95.setIcon(icon_74aa742a87852f96774db8a37aab5b89);
+        
+    
+            marker_737f8d50a3f171a03ee8397aef2b6d95.bindTooltip(
+                `<div>
+                     Itajubá - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac8c1cadfbabefb3c430240e36de36dc = L.marker(
+                [-22.255, -45.932],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_b97b1d9aaa1ca00dbc9bee8f175d5ab4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ac8c1cadfbabefb3c430240e36de36dc.setIcon(icon_b97b1d9aaa1ca00dbc9bee8f175d5ab4);
+        
+    
+            marker_ac8c1cadfbabefb3c430240e36de36dc.bindTooltip(
+                `<div>
+                     Pouso Alegre - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d698a45c4f865f283a3b11248529d995 = L.marker(
+                [-21.988, -45.913],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_5215a3e47e7f7a1ddcfbcf3033c7f4f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d698a45c4f865f283a3b11248529d995.setIcon(icon_5215a3e47e7f7a1ddcfbcf3033c7f4f1);
+        
+    
+            marker_d698a45c4f865f283a3b11248529d995.bindTooltip(
+                `<div>
+                     São João da Mata - Tempo de resposta: > 1 hora
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e1fb8df68a5eff0a7064c57d86bc52c = L.marker(
+                [-21.815, -46.567],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_aeac02ee53074e1a114af9f179e8cb4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5e1fb8df68a5eff0a7064c57d86bc52c.setIcon(icon_aeac02ee53074e1a114af9f179e8cb4e);
+        
+    
+            marker_5e1fb8df68a5eff0a7064c57d86bc52c.bindTooltip(
+                `<div>
+                     Poços de Caldas - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2f8e32c774439a45772853473dabc11 = L.marker(
+                [-21.329, -46.721],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_54a2ee94f00e5ded91afca7ac7b259a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f2f8e32c774439a45772853473dabc11.setIcon(icon_54a2ee94f00e5ded91afca7ac7b259a1);
+        
+    
+            marker_f2f8e32c774439a45772853473dabc11.bindTooltip(
+                `<div>
+                     Guaxupé - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c13649f4773f32eec5dbdfa769677eab = L.marker(
+                [-20.929, -46.996],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_a03f9ae2c2a8945935734acd6ea4fda2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c13649f4773f32eec5dbdfa769677eab.setIcon(icon_a03f9ae2c2a8945935734acd6ea4fda2);
+        
+    
+            marker_c13649f4773f32eec5dbdfa769677eab.bindTooltip(
+                `<div>
+                     São Sebastião do Paraíso - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db69af6b900c84fa792b2da7edcd9cba = L.marker(
+                [-20.741, -46.611],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_dce4f41851a9e95a94fb5a8589156754 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_db69af6b900c84fa792b2da7edcd9cba.setIcon(icon_dce4f41851a9e95a94fb5a8589156754);
+        
+    
+            marker_db69af6b900c84fa792b2da7edcd9cba.bindTooltip(
+                `<div>
+                     Passos - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5d9910dc68557fdbaa4c28547cded6a = L.marker(
+                [-21.445, -45.952],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_3ff39368fabf01290b142b2cf142ffcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f5d9910dc68557fdbaa4c28547cded6a.setIcon(icon_3ff39368fabf01290b142b2cf142ffcd);
+        
+    
+            marker_f5d9910dc68557fdbaa4c28547cded6a.bindTooltip(
+                `<div>
+                     Alfenas - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24d3a87bd7ff0444db28022bad7f4102 = L.marker(
+                [-21.143, -44.247],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_872223abaa3b8019acc01dd82ddf3bb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_24d3a87bd7ff0444db28022bad7f4102.setIcon(icon_872223abaa3b8019acc01dd82ddf3bb4);
+        
+    
+            marker_24d3a87bd7ff0444db28022bad7f4102.bindTooltip(
+                `<div>
+                     São João Del Rey - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e2dd33bc7ee43ed23255326e8b20431 = L.marker(
+                [-20.975, -44.001],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_6a68e0be7b27adddd653c33a54e70d73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5e2dd33bc7ee43ed23255326e8b20431.setIcon(icon_6a68e0be7b27adddd653c33a54e70d73);
+        
+    
+            marker_5e2dd33bc7ee43ed23255326e8b20431.bindTooltip(
+                `<div>
+                     Lagoa Dourada - Tempo de resposta: > 1 hora
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb72ea7485cd4e07f2de6c184b36b430 = L.marker(
+                [-21.241, -43.773],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_5e0d8227f5005e0ab1ab9af2c0d85b3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eb72ea7485cd4e07f2de6c184b36b430.setIcon(icon_5e0d8227f5005e0ab1ab9af2c0d85b3b);
+        
+    
+            marker_eb72ea7485cd4e07f2de6c184b36b430.bindTooltip(
+                `<div>
+                     Barbacena - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b0dcbaa51a5c116d4d62971a92a1bed = L.marker(
+                [-21.263, -44.999],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_d828d900f0044d1f50a2b59f47ffb164 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0b0dcbaa51a5c116d4d62971a92a1bed.setIcon(icon_d828d900f0044d1f50a2b59f47ffb164);
+        
+    
+            marker_0b0dcbaa51a5c116d4d62971a92a1bed.bindTooltip(
+                `<div>
+                     Lavras - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6e5d246261247204e26fdd62853c995 = L.marker(
+                [-18.781, -44.435],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_3886e1a5b2e3d7e0eab97833bc2c6c08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a6e5d246261247204e26fdd62853c995.setIcon(icon_3886e1a5b2e3d7e0eab97833bc2c6c08);
+        
+    
+            marker_a6e5d246261247204e26fdd62853c995.bindTooltip(
+                `<div>
+                     Curvelo - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36e25c79c8a5129d7935d2ed2ff85c81 = L.marker(
+                [-17.878, -41.505],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_8640f312581d82c92d943b6ca9b59fd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_36e25c79c8a5129d7935d2ed2ff85c81.setIcon(icon_8640f312581d82c92d943b6ca9b59fd7);
+        
+    
+            marker_36e25c79c8a5129d7935d2ed2ff85c81.bindTooltip(
+                `<div>
+                     Teófilo Otoni - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_acbded37f521624cba30d5372f009820 = L.marker(
+                [-17.883, -42.046],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_28145454d746b94c3f3483af8fae3c68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_acbded37f521624cba30d5372f009820.setIcon(icon_28145454d746b94c3f3483af8fae3c68);
+        
+    
+            marker_acbded37f521624cba30d5372f009820.bindTooltip(
+                `<div>
+                     Malacacheta - Tempo de resposta: > 1 hora
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eedcac9f90f04cb70c517117ddd66aec = L.marker(
+                [-16.758, -43.862],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_b790c88c56ce438a2b02af21cf178a1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eedcac9f90f04cb70c517117ddd66aec.setIcon(icon_b790c88c56ce438a2b02af21cf178a1d);
+        
+    
+            marker_eedcac9f90f04cb70c517117ddd66aec.bindTooltip(
+                `<div>
+                     Montes Claros - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a125a629b035eb44f279eacb21db28eb = L.marker(
+                [-16.881, -43.957],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_49b047accd9a6617c189b157b4e1159a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a125a629b035eb44f279eacb21db28eb.setIcon(icon_49b047accd9a6617c189b157b4e1159a);
+        
+    
+            marker_a125a629b035eb44f279eacb21db28eb.bindTooltip(
+                `<div>
+                     Montes Claros - Tempo de resposta: < 1 hora
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cea1b798ae2947c5549891b50a9d6f12 = L.marker(
+                [-15.502, -44.369],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_036c6fd20254b00bf51c484478b2a5e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cea1b798ae2947c5549891b50a9d6f12.setIcon(icon_036c6fd20254b00bf51c484478b2a5e8);
+        
+    
+            marker_cea1b798ae2947c5549891b50a9d6f12.bindTooltip(
+                `<div>
+                     Januária - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_927e8b4520a71e8f00203492cb3ad901 = L.marker(
+                [-15.828, -43.316],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_5432423465befdcab6439604d9df9a2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_927e8b4520a71e8f00203492cb3ad901.setIcon(icon_5432423465befdcab6439604d9df9a2a);
+        
+    
+            marker_927e8b4520a71e8f00203492cb3ad901.bindTooltip(
+                `<div>
+                     Janaúba - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8600b58b589c99b0eeb7437bebf6345e = L.marker(
+                [-17.367, -44.742],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_15f900fbb03ee35ea892bf45b3977d19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8600b58b589c99b0eeb7437bebf6345e.setIcon(icon_15f900fbb03ee35ea892bf45b3977d19);
+        
+    
+            marker_8600b58b589c99b0eeb7437bebf6345e.bindTooltip(
+                `<div>
+                     Pirapora - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_496528c50d3b784d544196d93aa2d7d0 = L.marker(
+                [-18.911, -41.963],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_8448976404ce2ba8c7881569c684dff9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_496528c50d3b784d544196d93aa2d7d0.setIcon(icon_8448976404ce2ba8c7881569c684dff9);
+        
+    
+            marker_496528c50d3b784d544196d93aa2d7d0.bindTooltip(
+                `<div>
+                     Gov. Valadares - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d3a342c2542541cb15cfa7689e2ae54d = L.marker(
+                [-19.806, -42.145],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_16b55365ac886de5346b6dae4ee72da3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d3a342c2542541cb15cfa7689e2ae54d.setIcon(icon_16b55365ac886de5346b6dae4ee72da3);
+        
+    
+            marker_d3a342c2542541cb15cfa7689e2ae54d.bindTooltip(
+                `<div>
+                     Caratinga - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba741a554b50db2e2731a94e3b86599e = L.marker(
+                [-20.012, -42.144],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_3914ba3ceca907dfe9c0c87985e36625 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ba741a554b50db2e2731a94e3b86599e.setIcon(icon_3914ba3ceca907dfe9c0c87985e36625);
+        
+    
+            marker_ba741a554b50db2e2731a94e3b86599e.bindTooltip(
+                `<div>
+                     Santa Bárbara do Leste - Tempo de resposta: < 1 hora
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2bfa636dfdd2f6c6169829f3346031a1 = L.marker(
+                [-19.548, -42.636],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_8704451e9a85586d364c14bb18725cbe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2bfa636dfdd2f6c6169829f3346031a1.setIcon(icon_8704451e9a85586d364c14bb18725cbe);
+        
+    
+            marker_2bfa636dfdd2f6c6169829f3346031a1.bindTooltip(
+                `<div>
+                     Cel. Fabriciano/Timóteo - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_961359e238e1cf23f0b4dac09bef726c = L.marker(
+                [-19.482, -42.549],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_4a8ac04bf18820ca00883ec43d206660 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_961359e238e1cf23f0b4dac09bef726c.setIcon(icon_4a8ac04bf18820ca00883ec43d206660);
+        
+    
+            marker_961359e238e1cf23f0b4dac09bef726c.bindTooltip(
+                `<div>
+                     Ipatinga - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1a742a02077da461a9aef61c643eecd = L.marker(
+                [-19.523, -42.581],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_4229f8c5179e9a09a09b98b74b9171a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c1a742a02077da461a9aef61c643eecd.setIcon(icon_4229f8c5179e9a09a09b98b74b9171a1);
+        
+    
+            marker_c1a742a02077da461a9aef61c643eecd.bindTooltip(
+                `<div>
+                     Cel Fabriciano/Ipatinga - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1858acc3d9645e1ba5313817011918c1 = L.marker(
+                [-16.408, -46.892],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_7dbf9a9ab1b787a7fc8ae1813556b64c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1858acc3d9645e1ba5313817011918c1.setIcon(icon_7dbf9a9ab1b787a7fc8ae1813556b64c);
+        
+    
+            marker_1858acc3d9645e1ba5313817011918c1.bindTooltip(
+                `<div>
+                     Unaí - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4e4f782c87bc7bcbfec48794c1cb6d7 = L.marker(
+                [-17.226, -46.873],
+                {}
+            ).addTo(map_546d368426f933169e7004e39986d19a);
+        
+    
+            var icon_959963a805b0969031c8126ef0527c03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f4e4f782c87bc7bcbfec48794c1cb6d7.setIcon(icon_959963a805b0969031c8126ef0527c03);
+        
+    
+            marker_f4e4f782c87bc7bcbfec48794c1cb6d7.bindTooltip(
+                `<div>
+                     Paracatu - Tempo de resposta: < 30 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
